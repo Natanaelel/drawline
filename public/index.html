@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body{
+        display: block;
+        margin: 0px;
+      }
+      .canvas{
+        display: block;
+        margin: 0px;
+        position: absolute;
+      }
+      .color-picker{
+        position: absolute;
+        bottom: 0px;
+        left: 30pc;
+        width: 80px;
+        height: 80px;
+      }
+      .range{
+        position: absolute;
+        bottom: 2pc;
+        left: 40pc;
+      }
+      .input{
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="canvas" class="canvas"></div>
+    <div class="input">
+      <input type="color" id="color-picker" class="color-picker" value="#ff0000"/>
+      <input type="range" id="range" class="range" min="0" max="100" value="10"/>
+    </div>
+    <script src="./p5/p5.js"></script>
+    <script src="./index.js"></script>
+    <script src="./drawing.js"></script>
+  </body>
+</html>
